@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <h1 id="title">Kayıt Formu</h1>
+    <p id="description"> Aşağıdaki formu doldurarak kayıt olabilirsiniz.</p>
+
+    
+
+   <form id="survey-form">
+
+    <label id="name-label" for="name">İsim:</label>
+    <input type="text" id="name" name="name" placeholder="Adınızı giriniz">
+
+    <label id="email-label" for="email"> E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="ornek@mail.com">
+
+    <label id="number-label" for="number">Yaşınız:</label>
+    <input type="number" id="number" name="number" placeholder="Yaşınızı giriniz" min="18" max="90">
+
+    <label for="dropdown">Eğitim Durumu:</label>
+    <select id="dropdown" name="education"> 
+        <option value="Lise">Lise</option>
+        <option value="Üniversite">Üniversite</option>
+     </select>
+
+     <p>Cinsiyet: </p>
+     <label > <input type="radio" name="gender" value="kadın">Kadın</label>
+     <label > <input type="radio" name="gender" value="erkek">Erkek</label>
+
+
+     <p>İlgi Alanların:</p>
+     <label> <input type="checkbox" name="hobby" value="müzik">Müzik</label>
+
+     <label> <input type="checkbox" name="hobby" value="kitap">Kitap</label>
+
+     <p>Eklemek İstedikleriniz:</p>
+     <textarea name="comments" rows="4" cols="40" placeholder="Mesajınızı buraya yazın.." ></textarea>
+
+     <input type="submit" id="submit" value="Gönder">
+     </form>
+     </div>
+
+
+
+
+
+
+   
+
+   
+
+
+
+
+    
+</body>
+</html>
